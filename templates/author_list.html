@@ -1,0 +1,7 @@
+{%  extends 'blank.html' %}
+{% block zawartosc %}
+
+{% for author in authors  %}
+    <li> <a href="{{ author.get_absolute_url }}">{{ author }}</a> </li>
+{% endfor %}
+{% endblock %}

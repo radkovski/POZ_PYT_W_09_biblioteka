@@ -1,0 +1,27 @@
+{% extends 'blank.html' %}
+{% block zawartosc %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add author</title>
+</head>
+<body>
+<form action="" method="POST">
+    {% csrf_token %}
+    <label>
+        Name:
+        <input name="first_name" type="text">
+    </label>
+    <label>
+        Last name:
+        <input name="last_name" type="text">
+    </label>
+    <label>
+        <input type="submit" value="ADD">
+    </label>
+</form>
+</body>
+</html>
+{% endblock %}

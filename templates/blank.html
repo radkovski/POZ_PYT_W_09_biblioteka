@@ -1,0 +1,22 @@
+
+{{ message }}
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blank</title>
+<link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
+</head>
+<body>
+{%  include 'nav_bar.html' %}
+{%  block zawartosc %}
+{%  endblock %}
+<br>
+{{ date }}
+
+<img src="{% static 'obraz.jpeg' %}">
+</body>
+
+
+</html>
